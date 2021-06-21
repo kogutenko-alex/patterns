@@ -10,8 +10,8 @@ Learning patterns on Java
 |                     | 5. Singleton               | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/creationPatterns/singletonPattern)  |
 |                     |                            |         |
 |Structure patterns   | 1. Adapter                 | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/adapterPattern)        |
-|                     | 2. Composite               |         |
-|                     | 3. Decorator               |         |
+|                     | 2. Composite               | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/compositePattern)        |
+|                     | 3. Decorator               | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/decoratorPattern)        |
 |                     | 4. Facade                  |         |
 |                     | 5. Flyweight               |         |
 |                     | 6. Proxy                   |         |
