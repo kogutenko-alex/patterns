@@ -1,8 +1,6 @@
 # Patterns
 Learning patterns on Java
 
-Has already considered:
-
 |Classification       | Patterns                   | Code    |
 |---------------------|----------------------------|---------|
 |Creation patterns    | 1. Factory method          | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/creationPatterns/factoryMethod)  |
