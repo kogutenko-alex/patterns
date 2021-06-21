@@ -12,13 +12,13 @@ Learning patterns on Java
 |Structure patterns   | 1. Adapter                 | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/adapterPattern)        |
 |                     | 2. Composite               | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/compositePattern)        |
 |                     | 3. Decorator               | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/decoratorPattern)        |
-|                     | 4. Facade                  |         |
-|                     | 5. Flyweight               |         |
-|                     | 6. Proxy                   |         |
+|                     | 4. Facade                  | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/facadePattern)        |
+|                     | 5. Flyweight               | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/flyweightPattern)        |
+|                     | 6. Proxy                   | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/proxyPattern)        |
 |                     | 7. Bridge                  | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern)        |
 |                     |                            |         |
-|Behavioural patterns | 1. Chain of Responsibility |         |
-|                     | 2. Command                 |         |
+|Behavioural patterns | 1. Chain of Responsibility | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/behaviouralPatterns/chainOfResponsibilityPattern)|
+|                     | 2. Command                 | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/behaviouralPatterns/commandPattern)        |
 |                     | 3. Iterator                |         |
 |                     | 4. Mediator                |         |
 |                     | 5. Memento                 |         |
