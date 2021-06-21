@@ -2,6 +2,11 @@
 Learning patterns on Java
 
 Has already considered:
-- Factory method;
-- Abstract factory method;
-- Builder;
+  Creation patterns:
+    - Factory method;
+    - Abstract factory method;
+    - Builder;
+    - Prototype;
+    - Singleton;  
+  Structure patterns:
+    - Adapter;
