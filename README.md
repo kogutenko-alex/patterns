@@ -15,7 +15,7 @@ Learning patterns on Java
 |                     | 4. Facade                  |         |
 |                     | 5. Flyweight               |         |
 |                     | 6. Proxy                   |         |
-|                     | 7. Bridge                  |         |
+|                     | 7. Bridge                  | [code here](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern)        |
 |                     |                            |         |
 |Behavioural patterns | 1. Chain of Responsibility |         |
 |                     | 2. Command                 |         |
