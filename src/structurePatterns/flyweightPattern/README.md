@@ -1,20 +1,20 @@
-# Bridge
+# Flyweight
 
 Complexity : 3/3
 
 Popularity : 1/3
 ***
-A bridge is a structural pattern that divides business logic or a large class into several separate hierarchies that can then be developed separately.
+Lightweight is a structural pattern that saves memory by splitting a general state drawn into a single object between multiple objects.
 
-> One of these hierarchies (abstraction) will get a reference to the objects of the other hierarchy (implementation) and will delegate to them the main work. Because all implementations follow a common interface, they can be interchangeably replaced within the abstract.
+> Lightweight saves memory by caching the same data used in different objects.
 ***
 ## Example of the above code
-**Task**: Bridge between instruments and remote controls
+**Task**: Drawing forest
 
-This example shows the separation of the code of [remote controls](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/remotes) and [household appliances](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/devices).
+In this example we will create and draw a forest (1.000.000 trees)! Each tree corresponds to its own object having some state (coordinates, textures, etc.). This program works, but it eats too much memory.
 
-The consoles act as «abstraction», and the devices are «realization». The same devices can operate with different remote controls, and the remote controls can control different devices.
+Many trees have the same properties (name, texture, color). So we can apply the Lightweight pattern and paste these properties in individual [TreeType](https://github.com/kogutenko-alex/patterns/blob/master/src/structurePatterns/flyweightPattern/trees/TreeType.java) objects. Now, instead of storing this data in millions of [Tree](https://github.com/kogutenko-alex/patterns/blob/master/src/structurePatterns/flyweightPattern/trees/Tree.java) objects, we’re going to refer to one of several lightweight objects.
 
-Using the Most pattern, we can change the classes of consoles and devices independently of each other.
+The client doesn’t even have to know about all this. The TreeType lightweight factory will take care of creating a new type of tree if a tree with some unique parameters is requested.
 ***
-![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/bridge.png)
+![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/flyweight.png)
