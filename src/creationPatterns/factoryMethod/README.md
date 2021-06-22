@@ -17,4 +17,4 @@ Different types of dialogue correspond to their own types of elements. So for ea
 
 Each particular dialog will generate the buttons that match it. The basic code of dialogs will not be broken, as it works with products only through their common interface.
 ***
-[diagram of our example](patterns/tree/master/img/factory_method.png)
+![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/factory_method.png)
