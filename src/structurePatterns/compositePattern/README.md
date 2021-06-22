@@ -1,20 +1,20 @@
-# Bridge
+# Composite 
 
-Complexity : 3/3
+Complexity : 2/3
 
-Popularity : 1/3
+Popularity : 2/3
 ***
-A bridge is a structural pattern that divides business logic or a large class into several separate hierarchies that can then be developed separately.
+A composite is a structural pattern that allows you to create an object tree and work with it in the same way as a single object.
 
-> One of these hierarchies (abstraction) will get a reference to the objects of the other hierarchy (implementation) and will delegate to them the main work. Because all implementations follow a common interface, they can be interchangeably replaced within the abstract.
+> The composite has long since become synonymous with all the tasks associated with constructing an object tree. All linker operations are based on recursion and «summation» of results on branches of the tree.
 ***
 ## Example of the above code
-**Task**: Bridge between instruments and remote controls
+**Task**: Simple and composite graphic figures
 
-This example shows the separation of the code of [remote controls](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/remotes) and [household appliances](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/devices).
+This example shows how it is possible to work with complex geometric figures composed of primes as if they were simple.
 
-The consoles act as «abstraction», and the devices are «realization». The same devices can operate with different remote controls, and the remote controls can control different devices.
+The [CompoundGraphic](https://github.com/kogutenko-alex/patterns/blob/master/src/structurePatterns/compositePattern/shapes/CompoundShape.java) class can contain any number of sub-shapes, including the same containers as itself. The container implements the same methods as simple shapes. But instead of acting directly, it transmits calls to all embedded components using recursion. Then it sort of «sums up» the results of all the embedded figures.
 
-Using the Most pattern, we can change the classes of consoles and devices independently of each other.
+The client code works with all the pieces through the common interface of the pieces and does not know that in front of it - simple figure or composite figure. This allows the client code to work with trees of any complexity without being tied to the specific classes of objects forming a tree.
 ***
-![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/bridge.png)
+![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/composite.png)
