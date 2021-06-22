@@ -1,20 +1,22 @@
-# Bridge
+# Decorator
 
-Complexity : 3/3
+Complexity : 2/3
 
-Popularity : 1/3
+Popularity : 2/3
 ***
-A bridge is a structural pattern that divides business logic or a large class into several separate hierarchies that can then be developed separately.
+A decorator is a structural pattern that allows objects to add new behaviors on the fly by placing them in wrappers.
 
-> One of these hierarchies (abstraction) will get a reference to the objects of the other hierarchy (implementation) and will delegate to them the main work. Because all implementations follow a common interface, they can be interchangeably replaced within the abstract.
+> The decorator allows to wrap objects countless times due to the fact that both wrappers and real wrapped objects share a common interface.
 ***
 ## Example of the above code
-**Task**: Bridge between instruments and remote controls
+**Task**: Encryption and data compression
 
-This example shows the separation of the code of [remote controls](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/remotes) and [household appliances](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/devices).
+This example shows how you can add new functionality to an object without changing its class.
 
-The consoles act as «abstraction», and the devices are «realization». The same devices can operate with different remote controls, and the remote controls can control different devices.
+At first, the business logic class could read and write only pure data directly from/to the files. By applying the Decorator pattern, we created small wrapping classes that add new behaviors before or after the main work of the embedded business logic object.
 
-Using the Most pattern, we can change the classes of consoles and devices independently of each other.
+The first wrapper [encrypts and decrypts](https://github.com/kogutenko-alex/patterns/blob/master/src/structurePatterns/decoratorPattern/decorators/EncryptionDecorator.java) the data, and the second wrap [compresses and unpacks](https://github.com/kogutenko-alex/patterns/blob/master/src/structurePatterns/decoratorPattern/decorators/CompressionDecorator.java) it.
+
+We can use the wrappers separately from each other and together, wrapping one decorator in different pieces.
 ***
-![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/bridge.png)
+![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/decorator.png)
