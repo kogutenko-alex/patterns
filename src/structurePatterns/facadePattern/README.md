@@ -1,20 +1,20 @@
-# Bridge
+# Facade
 
-Complexity : 3/3
+Complexity : 1/3
 
-Popularity : 1/3
+Popularity : 2/3
 ***
-A bridge is a structural pattern that divides business logic or a large class into several separate hierarchies that can then be developed separately.
+A facade is a structural pattern that provides a simple (but reduced) interface to a complex system of objects, a library or a framework.
 
-> One of these hierarchies (abstraction) will get a reference to the objects of the other hierarchy (implementation) and will delegate to them the main work. Because all implementations follow a common interface, they can be interchangeably replaced within the abstract.
+> In addition to reducing the overall complexity of the program, the facade also helps to move the code dependent on the external system to a single location.
 ***
 ## Example of the above code
-**Task**: Bridge between instruments and remote controls
+**Task**: Simple interface to complex video conversion library
 
-This example shows the separation of the code of [remote controls](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/remotes) and [household appliances](https://github.com/kogutenko-alex/patterns/tree/master/src/structurePatterns/bridgePattern/devices).
+In this example, Fasad simplifies the work of a client with a complex video conversion library.
 
-The consoles act as «abstraction», and the devices are «realization». The same devices can operate with different remote controls, and the remote controls can control different devices.
+The [facade](https://github.com/kogutenko-alex/patterns/blob/master/src/structurePatterns/facadePattern/facade/VideoConversionFacade.java) provides the user with only one simple method, concealing an entire system with video codec, audio mixers and other equally complex objects.
 
-Using the Most pattern, we can change the classes of consoles and devices independently of each other.
+Instead of working directly with a dozen classes, the facade provides the application code with a single method for video conversion, which is responsible for correctly configuring the framework objects and obtaining the desired result.
 ***
-![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/bridge.png)
+![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/facade.png)
