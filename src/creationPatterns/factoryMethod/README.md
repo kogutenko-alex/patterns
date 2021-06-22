@@ -1,7 +1,7 @@
 # Factory method
-***
+
 Complexity : 1/3
-***
+
 Popularity : 3/3
 ***
 The factory method is a design pattern that solves the problem of creating different products without specifying specific product classes.
