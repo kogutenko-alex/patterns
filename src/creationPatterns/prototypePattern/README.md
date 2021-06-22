@@ -2,19 +2,19 @@
 
 Complexity : 1/3
 
-Popularity : 3/3
+Popularity : 2/3
 ***
-The factory method is a design pattern that solves the problem of creating different products without specifying specific product classes.
+A prototype is a generative pattern that allows copying objects of any complexity without being bound to their specific classes.
 
-> The factory method specifies the method to use instead of calling the operator "new" to create product objects. Sub-classes may override this method to change the type of products being created.
+> All Prototype classes share a common interface. Therefore you can copy objects without paying attention to their specific types and always be sure that you get an exact copy. Cloning is performed by the prototype object itself, allowing it to copy the values of all fields, even private ones.
 ***
 ## Example of the above code
-**Task**: Production of cross-platform GUI elements
+**Task**: Copying Graphic Figures
 
-In this example, the products are the [buttons](https://github.com/kogutenko-alex/patterns/tree/master/src/creationPatterns/factoryMethod/button) and the creator is the [dialog](https://github.com/kogutenko-alex/patterns/tree/master/src/creationPatterns/factoryMethod/factory).
+Consider an example of implementing a Prototype without using a Cloneable interface.
 
-Different types of dialogue correspond to their own types of elements. So for each type of dialogue, we create our own subclass and redefine the factory method.
+In this example, the Prototype makes it possible to make accurate copies of geometric [shapes](https://github.com/kogutenko-alex/patterns/tree/master/src/creationPatterns/prototypePattern/shapes) without attaching to their classes.
 
-Each particular dialog will generate the buttons that match it. The basic code of dialogs will not be broken, as it works with products only through their common interface.
+All figures implement the [cloning interface](https://github.com/kogutenko-alex/patterns/blob/master/src/creationPatterns/prototypePattern/shapes/Shape.java) and provide a method to reproduce themselves. Subclasses use the cloning method of the parent and then copy their own fields to the resulting object.
 ***
-![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/factory_method.png)
+![diagram of our example](https://github.com/kogutenko-alex/patterns/blob/master/img/prototype.png)
