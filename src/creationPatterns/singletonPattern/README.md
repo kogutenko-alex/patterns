@@ -2,7 +2,7 @@
 
 Complexity : 1/3
 
-Popularity : 3/3
+Popularity : 2/3
 ***
 A Singleton is a generative pattern that guarantees the existence of only one object of a particular class, and that it can be accessed from anywhere in the program.
 
