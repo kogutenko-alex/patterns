@@ -4,7 +4,7 @@ import structurePatterns.flyweightPattern.forest.Forest;
 import java.awt.*;
 
 public class flyweightPatternStart {
-    static int CANVAS_SIZE = 500;
+    static int CANVAS_SIZE = 1000;
     static int TREES_TO_DRAW = 1000000;
     static int TREE_TYPES = 2;
 
